@@ -55,10 +55,8 @@ case .disconnected(let reason):
 
 ```swift
 switch reachability.status.connectionType {
-#if os(iOS)
 case .cellular(_):
   ...
-#endif
 case .wifi:
   ...
 case .wiredEthernet:

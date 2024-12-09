@@ -54,9 +54,7 @@ struct ContentView: View {
 extension ConnectionType {
     var icon: Image? {
         switch self {
-        #if os(iOS)
         case .cellular: Image(systemName: "cellularbars")
-        #endif
         case .wifi: Image(systemName: "wifi")
         case .wiredEthernet: Image(systemName: "cable.connector")
         case .loopback: Image(systemName: "point.forward.to.point.capsulepath")
